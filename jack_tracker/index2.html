@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Main Page | JackTracker</title>
+  <link rel="stylesheet" href="./css/style2.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div>
+    <section id="home">
+      <div id="hello">
+        Hello, <span id="result"></span>
+        <script>
+          document.getElementById("result").innerHTML = localStorage.getItem("index2")
+        </script>
+      </div>
+
+      <div id="title">Issue Tracking System</div>
+      <table>
+        <tr>
+          <td>
+            <form action="https://formspree.io/mgenarbg" method="POST" onsubmit="event.preventDefault();onFormSubmit();"
+              autocomplete="off">
+              <div>
+                <label>Title</label><label class="validation-error hide" id="titValidationError">This field is
+                  required.</label>
+                <input type="text" name="title" id="tit" placeholder="Title" />
+              </div>
+              <div>
+                <label>Issue</label>
+                <input type="text" name="type" id="type" placeholder="Issue" />
+              </div>
+              <div>
+                <label>Employee</label>
+                <input type="text" name="emp" id="emp" placeholder="Name" />
+              </div>
+              <div>
+                <label>Phone</label>
+                <input type="text" name="num" id="num" placeholder="Phone" />
+              </div>
+              <div class="submitbutton">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </td>
+          <td>
+            <table class="list" id="employeeList">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Issue</th>
+                  <th>Emp</th>
+                  <th>Phone</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <footer>JackTracker &copy; <span id="year"></span></footer>
+
+    <script src="js/main.js"></script>
+  </div>
+</body>
+
+</html>

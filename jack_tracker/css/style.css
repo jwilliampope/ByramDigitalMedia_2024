@@ -1,0 +1,75 @@
+/* STYLE 1 */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+body {
+  background: #f2f2f2;
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  min-height: 90vh;
+}
+
+.all {
+  color: #000;
+  margin: auto;
+  box-shadow: 60px 20px 40px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.all .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company {
+  font-size: 30px;
+}
+
+.msg {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.form input[type="text"].text {
+  border: none;
+  background: #333;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: #fff;
+  font-size: 2em;
+  outline: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-left: 12px;
+}
+
+.form .text::placeholder {
+  color: #fff;
+}
+
+.form .btn-login {
+  background: none;
+  color: #000;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 50px;
+  padding: 15px 35px;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form .btn-login:hover {
+  background: dimgray;
+  color: #fff;
+  transition: 0.5s;
+}
+
+footer {
+  position: absolute;
+  color: #000;
+  bottom: 10px;
+  padding-left: 20px;
+}
